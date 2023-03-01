@@ -33,4 +33,17 @@ class Api extends CI_Controller
 			post_estudante($data);
 		}
 	}
+	public function put_estudante()
+	{
+		if (isset($_GET['matricula']))
+			$matricula = $_GET['matricula']; {
+			$data = array(
+				'matricula' => $_GET['matricula'],
+				'nome' => $_GET['nome'],
+				'apelido' => $_GET['apelido'],
+				'sexo' => $_GET['sexo'],
+			);
+			put_estudante($matricula, $data);
+		}
+	}
 }
