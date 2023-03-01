@@ -46,4 +46,13 @@ class Api extends CI_Controller
 			put_estudante($matricula, $data);
 		}
 	}
+
+	public function delete_estudante()
+	{
+		if (isset($_GET['matricula'])) {
+
+			$matricula = $_GET['matricula'];
+			delete_estudante($matricula);
+		}
+	}
 }
