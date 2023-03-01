@@ -20,4 +20,17 @@ class Api extends CI_Controller
 
 		echo json_encode($data);
 	}
+
+	public function post_estudante()
+	{
+		if (isset($_GET['matricula'])) {
+			$data = array(
+				'matricula' => $_GET['matricula'],
+				'nome' => $_GET['nome'],
+				'apelido' => $_GET['apelido'],
+				'sexo' => $_GET['sexo'],
+			);
+			post_estudante($data);
+		}
+	}
 }
