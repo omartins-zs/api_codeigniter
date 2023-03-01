@@ -14,10 +14,10 @@ class Api extends CI_Controller
 		// Json_encode -> Converte Objeto PHP para string JSON
 		$data = array(
 			'status' => 200,
-			'data' => json_encode(get_estudantes()),
+			'data' => get_estudantes(),
 			'comentarios' => 'Olá tudo está bem!!!!!',
 		);
-		
-		var_dump($data);
+
+		echo json_encode($data);
 	}
 }
