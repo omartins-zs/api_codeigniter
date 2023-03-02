@@ -1,0 +1,31 @@
+CREATE DATABASE apiclasse;
+
+USE apiclasse;
+
+CREATE TABLE estudantes(
+matricula VARCHAR (10) NOT NULL PRIMARY kEY,
+nome VARCHAR(50) ,
+apelido VARCHAR(50) ,
+sexo ENUM('M', 'F'));
+
+DROP DATABASE apiclasse;
+
+SELECI * FROM estudantes;
+
+INSERT INTO `estudantes` (`matricula`, `nome`, `apelido`, `sexo`) VALUES ('2016-6932', 'Raquel', 'Campos', 'F'), ('2016-3214', 'Gabriel', 'Antunes', 'M'), ('2016-2547', 'Jorge', 'Jorginho', 'M'), ('2016-8452', 'Fernando', 'Fer', 'M'), ('2016-2255', 'Carlos', 'Guimarães', 'M')
+
+ALTER TABLE `estudantes` ADD `status` ENUM('ativo','desativo') NOT NULL AFTER `sexo`;
+
+BASE_URL
+http://10.0.0.207/api_codeigniter/
+
+// Create
+http://10.0.0.207/api_codeigniter/Api/get_estudantes
+// Insert
+http://10.0.0.207/api_codeigniter/Api/post_estudante
+// Update
+http://10.0.0.207/api_codeigniter/Api/put_estudante
+// Delete
+http://10.0.0.207/api_codeigniter/Api/delete_estudante
+
+https://www.youtube.com/watch?v=TGLOzskGTiQ    - Construir una API con codeigniter(PHP) y Mysql.
