@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
+<nav class="navbar navbar-expand-lg navbar-dark bg-info">
 	<div class="container-fluid">
 		<a class="navbar-brand" href="#">Prancha de Comunicação</a>
 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -10,13 +10,10 @@
 					<a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href="#">Features</a>
+					<a class="nav-link" href="<?= base_url() . 'Contato'; ?>">Contato</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href="#">Pricing</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link disabled">Disabled</a>
+					<a class="nav-link" href="<?= base_url() . 'Sobre'; ?>">Sobre</a>
 				</li>
 			</ul>
 		</div>
